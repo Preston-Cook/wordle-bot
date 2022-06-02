@@ -10,5 +10,3 @@ client = tweepy.Client(
     access_token=creds['access_key'],
     access_token_secret=creds['access_secret']
 )
-
-client.create_tweet(text='This is a test')
