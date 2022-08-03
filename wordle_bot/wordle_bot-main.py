@@ -40,6 +40,9 @@ while attempts < 6 and guess != solution:
                 if not any(word.count(s1) > len(yellow.get(s1,'')) + green.count(s1) for s1 in gray):
                     possibilities.append(word)
     
+    # Check for probability of certain substrings given correct letters
+    # Check common letter combinations in Scrabble and Banangram strategies
+    
     word_bank = possibilities.copy()
     guess = r.choice(word_bank)
     attempts += 1
